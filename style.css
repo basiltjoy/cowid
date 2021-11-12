@@ -1,0 +1,69 @@
+body{
+    background: rgb(217,235,232);
+    background: radial-gradient(circle, rgb(190, 235, 227) 0%, rgba(150,169,191,1) 100%);
+    height: 1500px;
+}
+
+/*index page  */
+.l1{
+    margin-top: 3%;
+    margin-left: 10%;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/*Registration page*/
+#regn1{
+    background: rgb(217,235,232);
+    background: radial-gradient(circle, rgba(217,235,232,1) 0%, rgba(70,209,84,1) 100%);
+    border-radius: 20%
+}
+
+h1{
+    margin-left: 37%;
+}
+
+.input1{
+  border-radius: 10%;
+  margin-left: 10.5%;
+}
+.input2{
+    border-radius: 10%;
+    margin-left: 0%; 
+}
+.input3{
+    border-radius: 10%;
+    margin-left: 3%;
+}
+
+.details{
+    margin-top: 4%;
+    margin-left: 39%;
+    margin-bottom: -1.6%;
+}
+
+
+#details1{
+    margin-top: 6%;
+    margin-left: 15%;
+    margin-bottom: 0.4%;
+}
+h2{
+    text-align: center;
+}
+
+.input6{
+    margin-left: 9%;
+}
+.input7{
+    margin-left: 2.5%;
+}
+.btn{
+    margin-left: 20%;
+    margin-top: 0%;
+}
