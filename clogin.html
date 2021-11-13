@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,15 +17,17 @@
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js"></script>
 </head>
-<body>
-    <div>
+
+<body id="clogin">
+    <div class="container">
         <h1>Login</h1>
         <input type="text" id="Vname" placeholder="Name">
         <input type="text" id="Vnumber" placeholder="Phone Number">
         <input type="text" placeholder="Date of Birth" id="dbirth">
     </div>
-    <button onclick="authenticate()">Submit</button>
-    <button onclick="logOut1()">Log out</button>
-    
+    <a class="btn btn-secondary" id="button1" onclick="logOut1()" role="button">Logout</a> <br>
+    <a class="btn btn-warning" id="button2" onclick="authenticate()" role="button">Submit</a>
+
 </body>
+
 </html>

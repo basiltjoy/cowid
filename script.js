@@ -44,8 +44,8 @@ function displayCentre(data) {
 }
 
 function logout2(){
-    localStorage.removeItem("P_name")
-    location.href="./clogin.html"
+    localStorage.clear()
+    location.href="./Registration.html"
 }
 
 
@@ -58,9 +58,8 @@ function registerforVaccine() {
         Vname, ph_number, dob
     }
     localStorage.setItem(user.Vname, JSON.stringify(user))
-  /*  alert("Account created for Vaccination")  */
-    window.location.href="./clogin.html"
-   
+    alert("Account created for Vaccination")   
+    window.location.href="./clogin.html" 
     
 }
 
@@ -73,22 +72,24 @@ function validateAccno(Vname) {
 
 function authenticate() {
     let P_name = Vname.value;
+    let phn=Vnumber.value
     let dateob = dbirth.value;
     if (this.validateAccno(P_name)) {
         let data = JSON.parse(localStorage.getItem(P_name))
-        if (dateob == data.dob) {
-            alert("login success")
+        if (dateob == data.dob & phn==data.ph_number) {
+            alert("login success") 
             location.href = "./index.html"
         }
         else {
             alert("Login Failed")
         }
     }
-    else {
+    else{
         alert("user not found")
     }
 }
 
 function logOut1(){
+    localStorage.clear()
     location.href="./Registration.html"
 }

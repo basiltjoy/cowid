@@ -15,6 +15,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
         crossorigin="anonymous"></script>
+    <style>
+        body {
+            height: 150px;
+        }
+    </style>
 </head>
 
 <body>
@@ -26,7 +31,7 @@
             <button class="bg-success border-dark">Vaccination Services</button>
             <button class="bg-success border-dark">Resources</button>
             <button class="bg-success border-dark" onclick="logout2()">Log out</button>
-            
+
 
         </div>
     </nav>
@@ -68,25 +73,53 @@
     <div class="l1">
         <input type="search" id="pin" placeholder="Pincode">
         <input type="text" id="Ddate" placeholder="Date">
-        <button type="submit" onclick="fetchCovidDetails()">Search</button>
+        <button type="submit" onclick="fetchCovidDetails()" id="search">Search</button>
     </div>
 
     <div class="Container">
-        <div id="result">
+        <div id="result" style="font-weight: 500;">
 
         </div>
     </div>
 
-<div>
-    
-</div>
+
+    <div id="travel">
+        <h2> International Travel Certificate</h2>
+        <p>Ready to travel the world? <br>Complete your vaccination and get a certificate now.</p>
+    </div>
+    <a href="https://prod-cdn.preprod.co-vin.in/assets/pdf/20211109_User+Guide_Download+Internation+Certificate.pdf">
+    <img src="./Images/travel.png" alt="none" id="international"></a>
 
 
 
-    <div style="margin-top: 80%;">
+    <div id="RaiseAnIssue">
+        <h1 class="text-capitalize text-decoration-underline fw-bolder">Raise an issue</h1>
+        <p style="padding-top: 30px; margin-left: 30px; font-weight:500;">Raise an issue or get solutions to your CoWIN
+            <br> 
+            account and vaccination certificate related<br>
+            issues instantly..
+        </p>
+        <a href="https://selfregistration.cowin.gov.in/?returnUrl=certificate-correction"
+            style="text-decoration: none;">Certificate Corrections</a> <br>
+        <br>
+        <a href="https://selfregistration.cowin.gov.in/?returnUrl=certificate-correction%2Fpassport"
+            style="text-decoration: none;">Add Passport</a> <br>
+        <br>
+        <a href="https://prod-cdn.preprod.co-vin.in/assets/pdf/Dos_and_Donts_for_Citizens.pdf"
+            style="text-decoration: none;">Dos_and_Donts</a> <br>
+        <br>
+        <a href="https://sandbox.cowin.gov.in/contact-us" style="text-decoration: none;">Get in Touch</a> <br>
+        <img src="./Images/issue.png" alt="none" id="issue">
+    </div>
+
+
+
+    <div style="margin-top: 15%;">
         <div _ngcontent-xrf-c116="" class="row mt-5">
             <div _ngcontent-xrf-c116="" class="col-sm-12 col-md-4 mb-5 text-center">
+
                 <span class="badge bg-dark rounded-pill fs-3">1</span>
+
                 <p _ngcontent-xrf-c116="" class="accessibility-plugin-ac"><span _ngcontent-xrf-c116=""
                         class="steps-count dashed-line"></span><span _ngcontent-xrf-c116="">Book an Appointment On
                         <br>CoWIN or Walk Into Any <br>Vaccination Center</span></p><a _ngcontent-xrf-c116=""
@@ -95,7 +128,7 @@
                     href="https://prod-cdn.preprod.co-vin.in/assets/pdf/User_Guide_Citizen%20registration_18%2B.pdf"
                     class="accessibility-plugin-ac"><img _ngcontent-xrf-c116=""
                         src="https://prod-cdn.preprod.co-vin.in/assets/images/vaccinated_img1.png"
-                        class="img-fluid mb-2"><span _ngcontent-xrf-c116="">  </span></a>
+                        class="img-fluid mb-2"><span _ngcontent-xrf-c116=""> </span></a>
             </div>
             <div _ngcontent-xrf-c116="" class="col-sm-12 col-md-4 mb-5 text-center">
                 <span class="badge bg-dark rounded-pill fs-3">2</span>
@@ -107,19 +140,19 @@
                     href="https://prod-cdn.preprod.co-vin.in/assets/pdf/Dos_and_Donts_for_Citizens.pdf"><img
                         _ngcontent-xrf-c116=""
                         src="https://prod-cdn.preprod.co-vin.in/assets/images/vaccinated_img2.png"
-                        class="img-fluid mb-2"><span _ngcontent-xrf-c116="">    </span></a>
+                        class="img-fluid mb-2"><span _ngcontent-xrf-c116=""> </span></a>
             </div>
             <div _ngcontent-xrf-c116="" class="col-sm-12 col-md-4 mb-5 text-center telLang">
                 <span class="badge bg-dark rounded-pill fs-3">3</span>
                 <p _ngcontent-xrf-c116="" class="accessibility-plugin-ac"><span _ngcontent-xrf-c116=""
-                    class="steps-count"></span><span _ngcontent-xrf-c116="">Download Your Vaccination <br>
-                    Certificate
-                    from CoWIN <br> and Wait for Dose #2</span></p><a _ngcontent-xrf-c116=""
+                        class="steps-count"></span><span _ngcontent-xrf-c116="">Download Your Vaccination <br>
+                        Certificate
+                        from CoWIN <br> and Wait for Dose #2</span></p><a _ngcontent-xrf-c116=""
                     title="Download your vaccine certificate" target="_blank"
                     aria-label="Download your vaccine certificate" class="accessibility-plugin-ac"
                     href="https://selfregistration.cowin.gov.in/vaccination-certificate"><img _ngcontent-xrf-c116=""
                         src="https://prod-cdn.preprod.co-vin.in/assets/images/vaccinated_img3.png"
-                        class="img-fluid mb-2"><span _ngcontent-xrf-c116="">    </span></a>
+                        class="img-fluid mb-2"><span _ngcontent-xrf-c116=""> </span></a>
             </div>
         </div>
     </div>
